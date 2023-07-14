@@ -11,13 +11,71 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
   <title>404</title>
   <style>
+    
     body {
       font-family: "Poppins", sans-serif;
+    }
+    img {
+      height: 400px;
+      width: 400px;
+    }
+    h1 {
+      margin-left: 122px;
+    }
+    h3 {
+      font-size: 45px;
+      width: 65%;
+      margin: 0;
+    
+    }
+    p {
+      font-size: 18px;
+      width: 60%;
+      margin-right: 0;
+    }
+    button {
+      padding: 15px;
+      background-color: black;
+      color: white;
+      border: none;
+    }
+    .elements {
+      width: 80%;
+      margin-top: 65px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      gap: 45px;
+    }
+    @media screen and (max-width:576px) {
+      h1 {
+        margin-left: 25px;
+        font-size: 20px;
+      }
+      .elements {
+        flex-direction: column;
+      }
+      h3 {
+        font-size: 38px;
+      }
+      p{
+        width: 80%;
+      }
     }
   </style>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>404 NOT FOUND</h1>
+    <div class="elements">
+      <img src="images/Scarecrow.png" alt="">
+      <div>
+        <h3>I have bad news for you</h3>
+        <p>The page you are looking for night be removed or tempororily is unavilable</p>
+        <button>Back to homepage</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
