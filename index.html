@@ -24,7 +24,7 @@
     }
     h3 {
       font-size: 45px;
-      width: 65%;
+      width: 75%;
       margin: 0;
     
     }
@@ -46,8 +46,16 @@
       margin-right: auto;
       display: flex;
       gap: 45px;
+      justify-content: space-between;
+    }
+    .info {
+      margin-left: 65px;
     }
     @media screen and (max-width:576px) {
+      img{
+        height: 320px;
+        width: 320px;
+      }
       h1 {
         margin-left: 25px;
         font-size: 20px;
@@ -56,10 +64,14 @@
         flex-direction: column;
       }
       h3 {
-        font-size: 38px;
+        font-size: 34px;
+        width: 90%;
       }
       p{
         width: 80%;
+      }
+      .container {
+        margin-bottom: 20px;
       }
     }
   </style>
@@ -69,7 +81,7 @@
     <h1>404 NOT FOUND</h1>
     <div class="elements">
       <img src="images/Scarecrow.png" alt="">
-      <div>
+      <div class="info">
         <h3>I have bad news for you</h3>
         <p>The page you are looking for night be removed or tempororily is unavilable</p>
         <button>Back to homepage</button>
